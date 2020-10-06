@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forms - Learning Activity 5</title>
+<link href="style/myform.css" rel="stylesheet" type="text/css" >
+<script src="js/myform.js"></script>
+</head>
+
+<body>
+	<!-- By Rachel Simms (Broadbent) -->
+	
+	<h1>Contact Us</h1>
+
+	<form id="form" action="" method="">
+		
+		<fieldset>
+		<label>First Name: <small>required</small></label>
+		<input type="text" id="fname" minLength="3" placeholder="Jane" required >
+		<p></p>
+		<label>Last Name: <small>required</small></label>
+		<input type="text" id="lname" minLength="3" placeholder="Doe" required >
+		<p></p>
+		<label>Email Address: <small>required</small></label>
+		<input type="email" id="email" placeholder="sample@example.com" required >
+		<p></p>
+		<label>Phone Number: <small>required</small></label>
+		<input type="tel" id="phone" placeholder="555-555-5555" required >
+		<p></p>
+		</fieldset>
+		
+		<fieldset>
+			<label>What Can We Help You With? <small>required</small></label>
+			<br>
+			<select id ="subject" name="subject" required> 
+				<option value="graphic">Graphic Design</option>
+				<option value="web-design">Web Design</option>
+				<option value="hello">Just Say Hi!</option>
+			</select>
+			<br>
+			<label>Message:</label>
+			<br>
+			<textarea id="message" placeholder="Type your message here..." minLength="3"></textarea>
+		</fieldset>
+		<button id="submit" type="submit" onsubmit="Submit">submit</button>
+	</form>
+
+</body>
+</html>
